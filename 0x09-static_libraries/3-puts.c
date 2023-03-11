@@ -4,7 +4,9 @@ void _puts(char *str)
 /**
  * main - Entry point
  *
- *Return: Always 0 (Success)
+ * _puts - prints a string, followed by a new line, to stdout
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
