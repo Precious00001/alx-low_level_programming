@@ -8,18 +8,19 @@
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
+	hash_node_t *node;
 	unsigned long int index;
-	hash_node_t *new;
 
-	if (!ht || !key)
+	if (ht == NULL || key == NULL || *key == '\0')
 		return (NULL);
+
 	index = key_index((const unsigned char *)key, ht->size);
-	new = ht->array[index];
-	while (new)
-	{
-		if (strcmp(new->key, key) == 0)
-			return (new->value);
-		new = node->next;
-	}
-	return (NULL);
+	if (index >= ht->size)
+		return (NULL);
+
+	node = ht->array[index];
+	while (node && strcmp(node->key, key) != 0)
+		node = node->next;
+
+	return ((node == NULL) ? NULL : node->value);
 }
