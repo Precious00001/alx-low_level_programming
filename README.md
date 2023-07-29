@@ -1,1 +1,1 @@
-My assignment solutions
+Low level programming alx projects/tasks.
