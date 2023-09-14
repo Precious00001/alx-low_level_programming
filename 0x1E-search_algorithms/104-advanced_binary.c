@@ -2,7 +2,7 @@
 
 /**
   * advanced_binary_recursive - searches for a value in an array of integers
-  * 								using the Binary search algorithm.
+  *				using the Binary search algorithm.
   * @array: A pointer to the first element of the [sub]array to search.
   * @l: The starting index of the [sub]array to search.
   * @r: The ending index of the [sub]array to search.

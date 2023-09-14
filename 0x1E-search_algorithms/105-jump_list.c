@@ -2,7 +2,7 @@
 
 /**
  * jump_list - searches for a value in an array of
- * 				integers using the Jump search algorithm.
+ *				integers using the Jump search algorithm.
  *
  * @list: input list
  * @size: size of the array
